@@ -27,7 +27,7 @@
   <div>
     <a href="impressum" target="_blank">Impressum</a>
     <span>-</span>
-    <a href="agb.pdf" target="_blank">AGB</a>
+    <a href="assets/agb.pdf" target="_blank">AGB</a>
     <fa-icon class="ml-1" [icon]="faDownload" />
   </div>
 

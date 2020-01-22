@@ -32,7 +32,7 @@
 <header class="container-fluid header-pattern">
   <div class="container">
     <a href="/">
-      <img src="images/logo.png" alt="Bruno Dabelstein Logo" />
+      <img src="assets/images/logo.png" alt="Bruno Dabelstein Logo" />
     </a>
   </div>
 </header>

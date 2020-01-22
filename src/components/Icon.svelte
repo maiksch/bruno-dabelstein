@@ -11,9 +11,9 @@
   const height = `${size}em`;
 
   const dict = {
-    phone: faPhone,
     at: faAt,
     clock: faClock,
+    phone: faPhone,
     wrench: faWrench
   };
 

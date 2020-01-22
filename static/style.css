@@ -1,11 +1,11 @@
 @font-face {
   font-family: sertig;
-  src: url("font/Sertig.otf");
+  src: url("assets/font/Sertig.otf");
   font-display: swap;
 }
 
 .header-pattern {
-  background: url("images/header.jpg");
+  background: url("assets/images/header.jpg");
   height: 90px;
   padding-top: 15px;
 }
@@ -30,7 +30,7 @@ section {
   font-family: "Roboto", sans-serif;
 }
 
-section > img {
+section img {
   border-radius: 6px;
 }
 

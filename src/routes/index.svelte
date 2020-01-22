@@ -5,19 +5,19 @@
 <picture>
   <source
     type="image/webp"
-    srcset="/images/landing-page/landing-page-960.webp 960w,
-    /images/landing-page/landing-page-1280.webp 1280w,
-    /images/landing-page/landing-page-1920.webp 1920w,
-    /images/landing-page/landing-page-2560.webp 2560w,
-    /images/landing-page/landing-page-3840.webp 3840w" />
+    srcset="assets/images/landing-page/landing-page-960.webp 960w,
+    assets/images/landing-page/landing-page-1280.webp 1280w,
+    assets/images/landing-page/landing-page-1920.webp 1920w,
+    assets/images/landing-page/landing-page-2560.webp 2560w,
+    assets/images/landing-page/landing-page-3840.webp 3840w" />
 
   <img
-    srcset="/images/landing-page/landing-page-960.jpg 960w,
-    /images/landing-page/landing-page-1280.jpg 1280w,
-    /images/landing-page/landing-page-1920.jpg 1920w,
-    /images/landing-page/landing-page-2560.jpg 2560w,
-    /images/landing-page/landing-page-3840.jpg 3840w"
-    src="/images/landing-page/landing-page-1920.jpg"
+    srcset="assets/images/landing-page/landing-page-960.jpg 960w,
+    assets/images/landing-page/landing-page-1280.jpg 1280w,
+    assets/images/landing-page/landing-page-1920.jpg 1920w,
+    assets/images/landing-page/landing-page-2560.jpg 2560w,
+    assets/images/landing-page/landing-page-3840.jpg 3840w"
+    src="assets/images/landing-page/landing-page-1920.jpg"
     alt="Bruno Dabelstein GmbH"
     class="d-none d-sm-inline-block w-100" />
 </picture>
@@ -81,7 +81,7 @@
             target="_blank"
             rel="noreferrer">
             <img
-              src="images/partner/smr.jpg"
+              src="assets/images/partner/smr.jpg"
               alt="Partner: S.M.R"
               class="lazyload img-rounded" />
           </a>
@@ -97,7 +97,7 @@
         <figure class="bilderunterschrift_partner">
           <a href="http://www.nano-met.de/" target="_blank" rel="noreferrer">
             <img
-              src="images/partner/nanomet.jpg"
+              src="assets/images/partner/nanomet.jpg"
               alt="Partner: Nano-Met"
               class="lazyload img-rounded" />
           </a>
