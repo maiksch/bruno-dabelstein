@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+
+    <title>Bruno Dabelstein GmbH</title>
+    <meta charset="utf-8" />
+
+    <base href="/" />
+
+    <link rel="icon"
+          type="image/x-icon"
+          href="favicon.ico" />
+
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+
+    <meta name="description"
+          content="Die Bruno Dabelstein GmbH ist ein Maschinenbauunternehmen im
+      Glinder Industriegebiet. Wir beschäftigen uns mit Maschinenbau,
+      Rohrleitungsbau, Kraftwerkservice, Industriemontage, Stahl- und Anlagenbau,
+      Reparatur und Modernisierung von Brücken, Bohrwerksarbeiten,
+      Schiffsreparaturen." />
+
+    <meta name="author"
+          content="Maik Schmaddebeck" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
+          rel="stylesheet"
+          type="text/css" />
+
+    <meta name='theme-color'
+          content='#333333'>
+
+    %sapper.base%
+
+    <link rel='stylesheet'
+          href='style.css'>
+
+    <!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+    %sapper.styles%
+
+    <!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+    %sapper.head%
+</head>
+
+<body>
+    <!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+    <div id='sapper'>%sapper.html%</div>
+
+    <!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+    %sapper.scripts%
+
+    <!-- Google Analytics -->
+    <script>
+        if (document.location.hostname === "bruno-dabelstein.de") {
+            window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+            ga('create', 'UA-45804958-1', 'auto');
+            ga('require', 'urlChangeTracker');
+            ga('send', 'pageview');
+        } else {
+            console.info('Not tracking google analytics. No production hostname');
+        }
+    </script>
+    <script async
+            src="autotrack.js"></script>
+    <script async
+            src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+</body>
+
+</html>
