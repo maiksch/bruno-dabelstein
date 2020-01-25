@@ -20,7 +20,7 @@
   const dict = {
     at: faAt,
     clock: faClock,
-    download: faDownlaod,
+    download: faDownload,
     fax: faFax,
     filePdf: faFilePdf,
     mobile: faMobile,
