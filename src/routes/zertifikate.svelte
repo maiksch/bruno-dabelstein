@@ -1,37 +1,15 @@
+<script context="module">
+  import { getCertificates } from '../contentful';
+
+  let zertifikate = [];
+
+  export async function preload() {
+    zertifikate = await getCertificates();
+  }
+</script>
+
 <script>
   import Icon from '../components/Icon.svelte';
-
-  let zertifikate = getZertifikate();
-  let entries;
-
-  async function getZertifikate() {
-    const accessToken = 'Oxl91T7UeVA9uL-hnb-bVAdzuAKtV5-JEW_kUCwaAx4';
-    const domain = 'https://cdn.contentful.com';
-    const space = 'yung6ky4n920';
-    const contentType = 'zertifikate';
-    const url = `${domain}/spaces/${space}/environments/master/entries?content_type=${contentType}&order=fields.titel`;
-
-    const response = await fetch(url, {
-      headers: {
-        authorization: `Bearer ${accessToken}`,
-      },
-      method: 'GET',
-    });
-    entries = await response.json();
-
-    zertifikate = entries.items.map(entry => ({
-      titel: entry.fields.titel,
-      beschreibung: entry.fields.beschreibung || '',
-      siegel: entry.fields.siegel ? getAsset(entry.fields.siegel).fields.file.url : null,
-      dabelsteinPdf: entry.fields.dabelsteinPdf ? getAsset(entry.fields.dabelsteinPdf).fields.file.url : null,
-      smrPdf: entry.fields.smrPdf ? getAsset(entry.fields.smrPdf).fields.file.url : null,
-    }));
-
-    function getAsset(asset) {
-      const includes = entries.includes.Asset;
-      return includes.find(include => include.sys.id === asset.sys.id);
-    }
-  }
 </script>
 
 <style>
