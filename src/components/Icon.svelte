@@ -1,5 +1,14 @@
 <script>
-  import { faAt, faFax, faPhone, faMobile, faWrench, faClock, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+  import {
+    faAt,
+    faFax,
+    faPhone,
+    faMobile,
+    faWrench,
+    faClock,
+    faFilePdf,
+    faDownload,
+  } from '@fortawesome/free-solid-svg-icons';
 
   export let icon;
   export let size = 1;
@@ -11,6 +20,7 @@
   const dict = {
     at: faAt,
     clock: faClock,
+    download: faDownlaod,
     fax: faFax,
     filePdf: faFilePdf,
     mobile: faMobile,
