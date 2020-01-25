@@ -23,6 +23,10 @@
   a {
     color: white;
   }
+
+  a:hover {
+    color: white;
+  }
 </style>
 
 <footer class="py-2">
