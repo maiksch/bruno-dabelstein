@@ -2,6 +2,8 @@
   import Icon from './Icon.svelte';
 
   export let contact;
+
+  const placeholder = '/assets/images/kontakt/placeholder.png';
 </script>
 
 <style>
@@ -12,7 +14,7 @@
 
 <div class="h-card contact mb-4">
   <span class="p-job-title d-block font-weight-bold">{contact.jobTitle}</span>
-  <img src={contact.photo} alt={contact.name} class="p-photo d-none d-sm-inline-block" />
+  <img src={contact.photo || placeholder} alt={contact.name} class="p-photo d-none d-sm-inline-block" />
   <span class="p-name d-block">{contact.name}</span>
   <span class="p-tel d-block">
     <span class="type">

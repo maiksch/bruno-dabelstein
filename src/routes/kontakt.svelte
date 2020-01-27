@@ -33,7 +33,6 @@
       tel: '+49(0)38847 - 33 91 14',
       mobile: '+49(0)171 - 45 63 98 4',
       email: 'm.brempel@bruno-dabelstein.de',
-      photo: 'http://placehold.it/119x180',
     },
     {
       name: 'Alexandr Sciuchin',
@@ -41,7 +40,6 @@
       tel: '+49(0)40 - 751 1493 36',
       mobile: '+49(0)176 - 13 77 68 00',
       email: 'a.sciuchin@bruno-dabelstein.de',
-      photo: 'http://placehold.it/119x180',
     },
     {
       name: 'Norbert Schmidt',
@@ -49,7 +47,6 @@
       tel: '+49(0)38847 - 33 91 12',
       mobile: '+49(0)176 - 13 77 68 02',
       email: 'n.schmidt@bruno-dabelstein.de',
-      photo: 'http://placehold.it/119x180',
     },
     {
       name: 'Uwe Tiedemann',
@@ -57,7 +54,6 @@
       tel: '+49(0)40 - 751 1493 35',
       mobile: '+49(0)176 - 17 32 33 45',
       email: 'u.tiedemann@bruno-dabelstein.de',
-      photo: 'http://placehold.it/119x180',
     },
     {
       name: 'Olaf Bruysten',
@@ -65,7 +61,6 @@
       tel: '+49(0)40 - 751 14 93 40',
       mobile: '+49(0)176 - 17 32 33 48',
       email: 'o.bruysten@bruno-dabelstein.de',
-      photo: 'http://placehold.it/119x180',
     },
   ];
 </script>
