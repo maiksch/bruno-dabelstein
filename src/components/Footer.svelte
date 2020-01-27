@@ -31,7 +31,7 @@
 
 <footer class="py-2">
   <div>
-    <a href="impressum" target="_blank">Impressum</a>
+    <a href="impressum">Impressum</a>
     <span>-</span>
     <a href="assets/agb.pdf" target="_blank">AGB</a>
 
