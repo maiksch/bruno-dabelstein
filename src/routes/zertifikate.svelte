@@ -35,7 +35,7 @@
       <div class="card certificate">
         <div class="card-body">
           <div class="d-flex justify-content-between">
-            <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-between overflow-auto">
               <h1>{zertifikat.titel}</h1>
 
               <p class="d-none d-sm-block mt-0 pr-5">{zertifikat.beschreibung}</p>
