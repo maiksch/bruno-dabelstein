@@ -36,7 +36,6 @@
     <a href="assets/agb.pdf" target="_blank">AGB</a>
 
     <Icon icon="download" />
-    <!-- <fa-icon class="ml-1" [icon]="faDownload" /> -->
   </div>
 
   <div class="copyright">&copy; Bruno Dabelstein GmbH {today.getFullYear()}</div>
