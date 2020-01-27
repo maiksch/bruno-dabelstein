@@ -1,3 +1,38 @@
+<script>
+  const API_KEY = 'AIzaSyDjqE3Q9PCN7cJQEKqu8kRcGO7LtQyIKiE';
+  const PLACE = 'Bruno Dabelstein Stahl- und Maschinenbau GmbH';
+  const src = `https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${PLACE}`;
+</script>
+
+<style>
+  @media (min-width: 576px) {
+    .map-section {
+      padding: 0;
+    }
+  }
+
+  .map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  @media (max-width: 576px) {
+    .map {
+      display: none;
+    }
+  }
+</style>
+
 <section class="text-center">
   <div class="d-flex flex-column justify-content-center">
     <h1>Hier finden Sie uns:</h1>
@@ -10,9 +45,18 @@
   </div>
 </section>
 
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2371.5858214204018!2d10.2344937!3d53.5294535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f3a782951157%3A0xfb924477b6d0b15e!2sOtto-Hahn-Stra%C3%9Fe+2%2C+21509+Glinde!5e0!3m2!1sde!2sde!4v1423587740318"
-  width="100%"
-  height="50%"
-  title="Google Maps Anfahrt"
-  frameborder="0" />
+<section class="map-section text-center">
+  <div class="map">
+    <iframe {src} title="Google Maps Anfahrt" frameborder="0" allowfullscreen />
+  </div>
+
+  <div class="d-flex d-sm-none w-100 justify-content-center flex-column">
+    <h2>In Google Maps öffnen:</h2>
+    <a href="https://goo.gl/maps/Kf5uxVuWWgqzZq3U7">
+      <picture>
+        <source type="image/webp" srcset="assets/images/google-maps.webp" />
+        <img src="assets/images/google-maps.png" alt="Anfahrt in Google Maps öffnen" width="100px" />
+      </picture>
+    </a>
+  </div>
+</section>
