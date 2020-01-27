@@ -8,6 +8,7 @@
     faClock,
     faFilePdf,
     faDownload,
+    faArrowCircleUp,
   } from '@fortawesome/free-solid-svg-icons';
 
   export let icon;
@@ -26,6 +27,7 @@
     mobile: faMobile,
     phone: faPhone,
     wrench: faWrench,
+    arrowCircleUp: faArrowCircleUp,
   };
 
   const faIcon = dict[icon];
@@ -50,7 +52,7 @@
 </style>
 
 {#if path}
-  <svg viewBox="0 0 {viewBoxX} {viewBoxY}" style="height: {size}em">
+  <svg viewBox="0 0 {viewBoxX} {viewBoxY}" style="font-size: {size}em">
     <path d={path} />
   </svg>
 {/if}
