@@ -55,13 +55,6 @@
       mobile: '+49(0)176 - 17 32 33 45',
       email: 'u.tiedemann@bruno-dabelstein.de',
     },
-    {
-      name: 'Olaf Bruysten',
-      jobTitle: 'Werkstattmeister',
-      tel: '+49(0)40 - 751 14 93 40',
-      mobile: '+49(0)176 - 17 32 33 48',
-      email: 'o.bruysten@bruno-dabelstein.de',
-    },
   ];
 </script>
 
