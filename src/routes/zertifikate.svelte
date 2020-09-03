@@ -1,5 +1,5 @@
 <script context="module">
-  import { getCertificates } from '../contentful';
+  import { getCertificates } from 'contentful';
 
   let zertifikate = [];
 
@@ -30,7 +30,6 @@
 
 <section>
   <div class="container">
-
     {#each zertifikate as zertifikat}
       <div class="card certificate">
         <div class="card-body">
@@ -52,15 +51,12 @@
                 {/if}
 
                 {#if zertifikat.smrPdf}
-                  {#if zertifikat.dabelsteinPdf}
-                    <span class="ml-2">|</span>
-                  {/if}
+                  {#if zertifikat.dabelsteinPdf}<span class="ml-2">|</span>{/if}
 
                   <a class="ml-2" href={zertifikat.smrPdf} target="_blank" rel="noopener noreferrer">
                     Download (S.M.R.)
                   </a>
                 {/if}
-
               </div>
             </div>
 
@@ -69,11 +65,9 @@
                 <img src={zertifikat.siegel} alt={zertifikat.titel} style="max-width: 150px" />
               </div>
             {/if}
-
           </div>
         </div>
       </div>
     {/each}
-
   </div>
 </section>
