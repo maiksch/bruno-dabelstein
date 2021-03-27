@@ -1,21 +1,21 @@
 <script context="module">
-  import { getKontakte } from 'contentful';
+  import { getKontakte } from '$lib/contentful';
 
-  let kontakte = [];
-
-  export async function preload() {
-    kontakte = await getKontakte();
+  export async function load({ fetch }) {
+    return {
+      props: {
+        kontakte: await getKontakte(fetch),
+      },
+    };
   }
 </script>
 
 <script>
   import Contact from '../components/Contact.svelte';
   import Icon from '../components/Icon.svelte';
+
+  export let kontakte = [];
 </script>
-
-<style>
-
-</style>
 
 <section class="text-center">
   <div class="d-flex justify-content-center flex-column">

@@ -1,22 +1,20 @@
 <script context="module">
-  import { getCertificates } from 'contentful';
+  import { getCertificates } from '$lib/contentful';
 
-  let zertifikate = [];
-
-  export async function preload() {
-    zertifikate = await getCertificates();
+  export async function load({ fetch }) {
+    return {
+      props: {
+        zertifikate: await getCertificates(fetch),
+      },
+    };
   }
 </script>
 
 <script>
   import Icon from '../components/Icon.svelte';
-</script>
 
-<style>
-  .certificate + .certificate {
-    margin-top: 1.5em;
-  }
-</style>
+  export let zertifikate = [];
+</script>
 
 <section>
   <div class="container">
@@ -71,3 +69,9 @@
     {/each}
   </div>
 </section>
+
+<style>
+  .certificate + .certificate {
+    margin-top: 1.5em;
+  }
+</style>

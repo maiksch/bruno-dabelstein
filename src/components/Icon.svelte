@@ -1,15 +1,5 @@
 <script>
-  import {
-    faAt,
-    faFax,
-    faPhone,
-    faMobile,
-    faWrench,
-    faClock,
-    faFilePdf,
-    faDownload,
-    faArrowCircleUp,
-  } from '@fortawesome/free-solid-svg-icons';
+  import * as icons from '@fortawesome/free-solid-svg-icons';
 
   export let icon;
   export let size = 1;
@@ -19,15 +9,15 @@
   let viewBoxY;
 
   const dict = {
-    at: faAt,
-    clock: faClock,
-    download: faDownload,
-    fax: faFax,
-    filePdf: faFilePdf,
-    mobile: faMobile,
-    phone: faPhone,
-    wrench: faWrench,
-    arrowCircleUp: faArrowCircleUp,
+    at: icons.faAt,
+    clock: icons.faClock,
+    download: icons.faDownload,
+    fax: icons.faFax,
+    filePdf: icons.faFilePdf,
+    mobile: icons.faMobile,
+    phone: icons.faPhone,
+    wrench: icons.faWrench,
+    arrowCircleUp: icons.faArrowCircleUp,
   };
 
   const faIcon = dict[icon];
@@ -40,6 +30,12 @@
   }
 </script>
 
+{#if path}
+  <svg viewBox="0 0 {viewBoxX} {viewBoxY}" style="font-size: {size}em">
+    <path d={path} />
+  </svg>
+{/if}
+
 <style>
   svg {
     fill: currentColor;
@@ -50,9 +46,3 @@
     vertical-align: -0.125em;
   }
 </style>
-
-{#if path}
-  <svg viewBox="0 0 {viewBoxX} {viewBoxY}" style="font-size: {size}em">
-    <path d={path} />
-  </svg>
-{/if}

@@ -6,12 +6,6 @@
   const placeholder = '/assets/images/kontakt/placeholder.png';
 </script>
 
-<style>
-  .contact {
-    font-size: 15px;
-  }
-</style>
-
 <div class="h-card contact mb-4">
   <span class="p-job-title d-block font-weight-bold">{contact.stellenbeschreibung}</span>
   <img src={contact.bild || placeholder} alt={contact.name} class="p-photo d-none d-sm-inline-block" />
@@ -32,3 +26,9 @@
     <a href="mailto:{contact.email}">{contact.email}</a>
   </span>
 </div>
+
+<style>
+  .contact {
+    font-size: 15px;
+  }
+</style>

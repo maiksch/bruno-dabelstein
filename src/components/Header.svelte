@@ -1,6 +1,13 @@
 <script>
-
 </script>
+
+<header class="container-fluid header-pattern">
+  <div class="container">
+    <a href="/">
+      <img src="assets/images/logo.png" alt="Bruno Dabelstein Logo" />
+    </a>
+  </div>
+</header>
 
 <style>
   header img {
@@ -28,11 +35,3 @@
     }
   }
 </style>
-
-<header class="container-fluid header-pattern">
-  <div class="container">
-    <a href="/">
-      <img src="assets/images/logo.png" alt="Bruno Dabelstein Logo" />
-    </a>
-  </div>
-</header>

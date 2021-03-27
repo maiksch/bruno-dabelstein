@@ -60,7 +60,8 @@
       <a
         href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
       </a>
       .
@@ -141,21 +142,20 @@
       <a
         title="Google Analytics Opt-Out-Cookie setzen"
         onClick="gaOptout();alert('Google Analytics wurde deaktiviert');"
-        href="#">
+        href="#"
+      >
         diesen Link anklicken
       </a>
-      . Dabei wird ein Opt-Out-Cookie auf Ihrem Gerät installiert. Damit wird die Erfassung durch Google Analytics für
-      diese Website und für diesen Browser zukünftig verhindert, so lange das Cookie in Ihrem Browser installiert
-      bleibt.
+      . Dabei wird ein Opt-Out-Cookie auf Ihrem Gerät installiert. Damit wird die Erfassung durch Google Analytics für diese
+      Website und für diesen Browser zukünftig verhindert, so lange das Cookie in Ihrem Browser installiert bleibt.
     </p>
     <h2>Verwendung von Scriptbibliotheken (Google Webfonts)</h2>
     <p>
       Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, verwenden wir auf dieser
       Website Scriptbibliotheken und Schriftbibliotheken wie z. B. Google Webfonts (
       <a href="http://www.google.com/webfonts/" target="_blank" rel="noopener">https://www.google.com/webfonts/</a>
-      ). Google Webfonts werden zur Vermeidung mehrfachen Ladens in den Cache Ihres Browsers übertragen. Falls der
-      Browser die Google Webfonts nicht unterstützt oder den Zugriff unterbindet, werden Inhalte in einer
-      Standardschrift angezeigt.
+      ). Google Webfonts werden zur Vermeidung mehrfachen Ladens in den Cache Ihres Browsers übertragen. Falls der Browser
+      die Google Webfonts nicht unterstützt oder den Zugriff unterbindet, werden Inhalte in einer Standardschrift angezeigt.
     </p>
     <p>
       Der Aufruf von Scriptbibliotheken oder Schriftbibliotheken löst automatisch eine Verbindung zum Betreiber der
@@ -201,6 +201,5 @@
       </a>
       <em>.</em>
     </p>
-
   </div>
 </section>

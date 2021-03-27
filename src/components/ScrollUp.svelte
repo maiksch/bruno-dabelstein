@@ -13,6 +13,12 @@
   }
 </script>
 
+<svelte:window on:scroll={onScroll} />
+
+<div class="scroll-top-button d-flex justify-content-center" class:show on:click={scrollUp}>
+  <Icon icon="arrowCircleUp" size="2.5" />
+</div>
+
 <style>
   .scroll-top-button {
     position: fixed;
@@ -47,9 +53,3 @@
     opacity: 1;
   }
 </style>
-
-<svelte:window on:scroll={onScroll} />
-
-<div class="scroll-top-button d-flex justify-content-center" class:show on:click={scrollUp}>
-  <Icon icon="arrowCircleUp" size="2.5" />
-</div>

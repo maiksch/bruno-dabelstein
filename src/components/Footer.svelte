@@ -4,6 +4,18 @@
   const today = new Date();
 </script>
 
+<footer class="py-2">
+  <div>
+    <a href="impressum">Impressum</a>
+    <span>-</span>
+    <a href="assets/agb.pdf" target="_blank">AGB</a>
+
+    <Icon icon="download" />
+  </div>
+
+  <div class="copyright">&copy; Bruno Dabelstein GmbH {today.getFullYear()}</div>
+</footer>
+
 <style>
   footer {
     background-color: rgb(42, 49, 67);
@@ -28,15 +40,3 @@
     color: white;
   }
 </style>
-
-<footer class="py-2">
-  <div>
-    <a href="impressum">Impressum</a>
-    <span>-</span>
-    <a href="assets/agb.pdf" target="_blank">AGB</a>
-
-    <Icon icon="download" />
-  </div>
-
-  <div class="copyright">&copy; Bruno Dabelstein GmbH {today.getFullYear()}</div>
-</footer>

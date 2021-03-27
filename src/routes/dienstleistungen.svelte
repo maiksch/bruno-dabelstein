@@ -1,27 +1,3 @@
-<script>
-
-</script>
-
-<style>
-  img {
-    height: 200px;
-    margin-bottom: 1rem;
-  }
-
-  @media (max-width: 830px) {
-    img {
-      height: 120px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-</style>
-
 <section>
   <div class="container">
     <h1 class="text-center">Maschinenbau</h1>
@@ -73,14 +49,11 @@
           * Revisionsarbeiten im Bereich Rost Müllaufgabe Entschlackung Druckteil (Ausführung der gesamten
           Revisionsarbeiten jährlich)
         </div>
-
       </li>
       <li>
         <b>Diverse Revisionsarbeiten im HKV sowie GKK:</b>
         <div>* Rahmenvertrag seit 2005 für diverse Stahl- und Rohrleitungsarbeiten Vattenfall Fernwärme</div>
-
       </li>
-
     </ul>
   </div>
 </section>
@@ -241,3 +214,23 @@
     </div>
   </div>
 </section>
+
+<style>
+  img {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 830px) {
+    img {
+      height: 120px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
